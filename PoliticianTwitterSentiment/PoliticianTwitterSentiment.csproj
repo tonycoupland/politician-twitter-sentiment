@@ -29,6 +29,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="appsettings %28copy%29.json" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Sentiment\db\AFINN-111.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
