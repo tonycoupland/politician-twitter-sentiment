@@ -27,7 +27,10 @@ namespace PoliticianTwitterSentiment
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
+            // Make config avaialble to controllers
+            services.AddSingleton<IConfiguration>(Configuration);
+
+			// Add framework services.
             services.AddMvc();
         }
 
